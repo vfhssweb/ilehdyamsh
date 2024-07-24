@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar {
+      background-color: #ffffff; /* White background */
+    }
+    .navbar-nav .nav-link {
+      color: #000000; /* Default text color */
+    }
+    .navbar-nav .nav-link:hover {
+      color: #004d00; /* Dark green hover color */
+    }
+    .navbar-nav .nav-item .dropdown-menu {
+      background-color: #003366; /* Navy blue dropdown background */
+    }
+    .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+      color: #ffffff; /* White text in dropdown */
+    }
+    .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+      background-color: #002244; /* Slightly darker navy for hover */
+    }
+    .navbar-toggler {
+      border-color: #004d00; /* Dark green border for hamburger */
+    }
+    .navbar-toggler-icon {
+      background-color: #004d00; /* Dark green background for hamburger icon */
+      border-radius: 3px; /* Rounded corners for hamburger icon */
+    }
+    .navbar-toggler-icon::before {
+      content: " ";
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #ffffff; /* White bars in hamburger icon */
+      position: relative;
+      top: 8px;
+    }
+    .navbar-toggler-icon::after {
+      content: " ";
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #ffffff; /* White bars in hamburger icon */
+      position: relative;
+      top: 12px;
+    }
+    .navbar-brand img {
+      max-height: 40px; /* Adjust logo size */
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <!-- Logo on the left -->
+      <a class="navbar-brand" href="#">
+        <img src="https://via.placeholder.com/150x40" alt="Logo"> <!-- Replace with your logo -->
+      </a>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link 1
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Sub-link 1</a></li>
+              <li><a class="dropdown-item" href="#">Sub-link 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link 2
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="#">Sub-link 1</a></li>
+              <li><a class="dropdown-item" href="#">Sub-link 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link 3
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+              <li><a class="dropdown-item" href="#">Sub-link 1</a></li>
+              <li><a class="dropdown-item" href="#">Sub-link 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link 4
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              <li><a class="dropdown-item" href="#">Sub-link 1</a></li>
+              <li><a class="dropdown-item" href="#">Sub-link 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link 5
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+              <li><a class="dropdown-item" href="#">Sub-link 1</a></li>
+              <li><a class="dropdown-item" href="#">Sub-link 2</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Donate Button on the right -->
+        <a class="btn btn-primary ms-3" href="#">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
